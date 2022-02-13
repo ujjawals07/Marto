@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    box-sizing: border-box;
+    font-size: 90%;
+
+
+    @media only screen and (max-width:1000px){
+        font-size: 76%;
+    }
+
+    @media only screen and (max-width:800px){
+        font-size: 70%;
+    }
+}
+
+*::before
+*::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family:  'Roboto', sans-serif;;
+    background-image: linear-gradient(to right bottom, rgb(177, 34, 34),rgb(112, 32, 32));
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150vh;
+    font-weight: 500;
+    line-height: 1.7;
+}

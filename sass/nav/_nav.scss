@@ -1,0 +1,106 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+
+
+  
+    &-uj{
+padding-top: 40px;
+
+@media only screen and (max-width:900px){
+    display: flex;
+    margin: 20px;
+    padding-top: 0;
+}
+
+    }
+    &-bar{
+        display: flex;
+        //align-self: flex-end;
+        text-decoration: none;
+        position: relative;
+
+        @media only screen and (max-width:900px){
+            padding-right:20px;
+        }
+      
+      
+    }
+
+&-bar::before{
+    content: "";
+    width: 3px;
+    height: 40px;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleY(0);}
+
+
+
+&-bar:hover::before{
+    width: 100%;
+    transform: scaleY(1);
+    transition: .4s;
+}
+
+&-bar-active::before{
+    width: 100%;
+    transform: scaleY(1);
+}
+&-bar:active{
+    color: yellow;
+}
+
+    &-btn{
+display: flex;
+align-items: center;
+text-decoration: none;
+text-transform: uppercase;
+font-size: 15px;
+font-weight: bolder;
+color: ghostwhite;
+margin-right: -15px;
+position: relative;
+
+    }
+
+    
+    &-icon{
+        height: 1rem;
+        width: 2rem;
+        padding: 1rem;
+        fill: gold;
+       
+    }
+}
+
+.naam{
+    margin-left: -10px;
+    
+    &:active{
+        color: rgb(185, 185, 153);
+        transition: .2s;
+    }
+
+    
+}
+.legal{
+
+    font-size: 10px;
+    color: black;
+    display: flex;
+    margin-top: 400px;
+    color:gold;
+    margin-left: 5px;
+    text-transform: uppercase;
+  
+
+    @media only screen and (max-width:900px) {
+        display: none;
+        
+    }
+
+  
+}

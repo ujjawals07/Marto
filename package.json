@@ -1,0 +1,17 @@
+{
+  "name": "marto",
+  "version": "1.0.0",
+  "description": " marto app",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "ujju",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  },
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}
